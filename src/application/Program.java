@@ -48,6 +48,14 @@ public class Program {
 
         }
 
+        System.out.println("===== TEST 4: seller insert =====");
+
+        Seller newSeller = new Seller(null, "BigBob", "bigbob@gmail.com", new Date(), 4500.0, department);
+
+        sellerDao.insert(newSeller);
+
+        System.out.println("Inserted! New id = " + newSeller.getId());
+
     }
 
 }
